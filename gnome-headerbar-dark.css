@@ -1,0 +1,64 @@
+/********************************************************
+ * This work is licensed under a Creative Commons       *
+ * Attribution-ShareAlike 4.0 International License.    *
+ * For more information, go to                          *
+ * http://creativecommons.org/licenses/by-sa/4.0/       *
+ *                                                      *
+ * Author: Stephen Michel                               *
+ *                                                      *
+ * Original Author: Svitozar Cherepii                   *
+ ********************************************************/
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul") {
+
+    #main-window:not([customize-entered])[htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme)  #nav-bar {
+        border-radius: 7px 7px 0 0;
+    }
+    
+    #main-window[htitlemode="always"] > #tab-view-deck {
+        box-shadow: inset 0 0 4px #2d3232 !important;
+    }
+
+    #main-window:not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
+    #main-window[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar{
+        background-image: linear-gradient(to bottom, #434a4a, #393f3f) !important;
+        box-shadow: inset 0 -1px #2d3232, inset 0 1px rgba(238, 238, 236, 0.1) !important;
+    }
+
+    /* Paddings */
+    
+    #TabsToolbar { height: 39px !important; }
+    
+    #main-window:not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
+    #main-window[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
+        padding: 6px 3px !important;
+    }
+
+    #urlbar, #searchbar {
+        height: 34px;
+    }
+
+    #nav-bar[reliefbuttons="true"] .toolbarbutton-1 {
+        min-width: 34px !important;
+    }
+
+    :-moz-any(#window-controls, .window-controls) > toolbarbutton {
+        min-width: 34px !important;
+    }
+
+    #nav-bar :-moz-any(#back-button, #forward-button),
+    #nav-bar[reliefbuttons="true"] :-moz-any(#back-button, #forward-button) {
+        min-width: 33px !important;
+    }
+
+    #main-window:not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #urlbar,
+    #main-window[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #urlbar {
+        margin: 0 36px !important;
+    }
+
+    .panel-arrow {
+        padding-top: 9px;
+    }
+
+}
