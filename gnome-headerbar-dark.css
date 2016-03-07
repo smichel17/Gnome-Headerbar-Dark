@@ -51,7 +51,18 @@
     #main-window[htitlemode="always"] > #tab-view-deck {
         box-shadow: inset 0 0 4px #2d3232 !important;
     }
-    
+
+    /**
+     * blue border on url bar when typing in it
+     * TODO: Add a fade-in animation so it mimics gnome exactly
+     **/
+    #main-window:not(:-moz-window-inactive) #navigator-toolbox:not(:-moz-lwtheme) #urlbar[focused] {
+        border-color: #0f2b48 !important;
+        outline: 1px #215d9c !important;
+        outline-offset: -2px !important;
+        outline-style: solid !important;
+    }
+
     /* Gradient on the nav-bar when window decorations are hidden and window is focused */
     #main-window:not(:-moz-window-inactive):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar, #main-window:not(:-moz-window-inactive)[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar{
         background-image: linear-gradient(to bottom, #434a4a, #393f3f) !important;
