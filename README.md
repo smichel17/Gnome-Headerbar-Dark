@@ -6,6 +6,8 @@ Headerbar style for GNOME 3.16+ with dark theme
 
 The [user style](https://userstyles.org/styles/96733/headerbar-style-for-gnome-3-16) this is based on relies on a now-defunct [extension](https://addons.mozilla.org/en-US/firefox/addon/darkwdec/), so it breaks when Gnome 3's global dark theme is enabled. This theme one works for the dark theme and it only.
 
+![screenshot](gnome-headerbar-dark-screenshot.png)
+
 ## Versioning
 
 Even though it's a small css file so it's kind of silly, I'm going to use [Semantic Versioning](http://semver.org). For css, I think that means:
